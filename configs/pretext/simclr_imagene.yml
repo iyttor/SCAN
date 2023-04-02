@@ -8,9 +8,9 @@ model_kwargs:
    features_dim: 128
 
 # Dataset
-train_db_name: cifar-10
-val_db_name: cifar-10
-num_classes: 10
+train_db_name: imagene
+val_db_name: imagene
+num_classes: 5
 
 # Loss
 criterion: simclr

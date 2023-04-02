@@ -14,7 +14,7 @@ You can follow this guide to obtain the semantic clusters with SCAN on the STL-1
 Clone the repository and navigate to the directory:
 ```bash
 git clone https://github.com/wvangansbeke/Unsupervised-Classification.git
-cd  Unsupervised-Classification
+cd  SCAN
 ```
 
 ### Environment

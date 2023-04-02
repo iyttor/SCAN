@@ -43,8 +43,9 @@ def main():
    
     # CUDNN
     print(colored('Set CuDNN benchmark', 'blue')) 
-    torch.backends.cudnn.benchmark = True
-    
+    # torch.backends.cudnn.benchmark = True
+    torch.backends.cudnn.benchmark = False
+
     # Dataset
     print(colored('Retrieve dataset', 'blue'))
     train_transforms = get_train_transformations(p)
