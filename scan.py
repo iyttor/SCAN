@@ -26,7 +26,8 @@ def main():
     print(colored(p, 'red'))
 
     # CUDNN
-    torch.backends.cudnn.benchmark = True
+    # torch.backends.cudnn.benchmark = True
+    torch.backends.cudnn.benchmark = False
 
     # Data
     print(colored('Get dataset and dataloaders', 'blue'))
