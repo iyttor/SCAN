@@ -8,7 +8,7 @@ import numpy as np
 import torch
 import torchvision.transforms as transforms
 from data.augment import Augment, Cutout
-from utils.collate import collate_custom
+# from utils.collate import collate_custom
 
  
 def get_criterion(p):
@@ -205,13 +205,13 @@ def get_val_dataset(p, transform=None, to_neighbors_dataset=False):
 
 def get_train_dataloader(p, dataset):
     return torch.utils.data.DataLoader(dataset, num_workers=p['num_workers'], 
-            batch_size=p['batch_size'], pin_memory=True, collate_fn=collate_custom,
+            batch_size=p['batch_size'], pin_memory=True,
             drop_last=True, shuffle=True)
 
 
 def get_val_dataloader(p, dataset):
     return torch.utils.data.DataLoader(dataset, num_workers=p['num_workers'],
-            batch_size=p['batch_size'], pin_memory=True, collate_fn=collate_custom,
+            batch_size=p['batch_size'], pin_memory=True,
             drop_last=False, shuffle=False)
 
 
