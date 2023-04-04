@@ -53,8 +53,8 @@ def get_model(p, pretrain_path=None):
             backbone = resnet18()
 
         elif p['train_db_name'] == 'imagene':
-            from models.resnet_cifar import resnet18
-            backbone = resnet18()
+            from models.resnet_imagene import resnet
+            backbone = resnet()
         else:
             raise NotImplementedError
 
